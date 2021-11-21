@@ -1,0 +1,14 @@
+red = "hi!"
+print(red)
+red = "hello!"
+print(red)
+
+name = 'Nilgun'
+last_name = 'Tapkan'
+print(name.title() + ' ' + last_name.title())
+
+full_name = name + ' ' + last_name
+print(full_name.lower())
+
+#3 
+print(0.4 + 0.8)
