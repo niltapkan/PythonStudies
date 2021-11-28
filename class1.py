@@ -4,7 +4,7 @@
 
 # Naming Rules
 #Can : Letters, Numbers, Underscores
-# message = "25 is here."
+# message = "25ishere."
 
 # # Can't: 
 # # - Start w numbers 
