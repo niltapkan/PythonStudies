@@ -3,11 +3,11 @@
 #Lists
 students = ['tarik','diana','yusuf','nilgun','yunus']
 
-# Naming and Defining (genelde cogul yazariz liste adini)
+# Naming and Defining - Adlandirma ve tanimlama (genelde cogul yazariz liste adini)
 # variable_name = [items]
 colors = ['r','g','a']
 
-# Accessing elements
+# Accessing elements - Elemanlara erisim.
 # 0, 1, 2, 3, ..... n 
 '''
 (pythonda sifirla baslar her zaman.
@@ -15,8 +15,8 @@ ilk element her zaman 0 olarak kabul edilir)
 
 '''
 #ith element -> name_of_the_var[i]
-# the_color = colors[0]
-# print(the_color)
+the_color = colors[0]
+print(the_color)
 
 # print(colors[1])
 
@@ -26,7 +26,7 @@ ilk element her zaman 0 olarak kabul edilir)
 #no no no
 #print(colors[3]) / print(colors[-3]) / print(colors[-4])
 # Inde
-
+#???
 # loops in Lists
 names = ['bdr', 'trk', 'dna', 'nl', 'huz', 'yus']
 
@@ -122,75 +122,75 @@ tech_comps = ['microsoft', 'apple', 'google']
 # print(tech_comps)
 # print(tech_comps_sorted)
 
-ls = ['1', '2', '3', '4']
-# ls.sort(reverse= True)
-# print(ls)
-# print(ls[::-1])
+# ls = ['1', '2', '3', '4']
+# # ls.sort(reverse= True)
+# # print(ls)
+# # print(ls[::-1])
 
-# Numerical sorting
+# # Numerical sorting
+# # nums = [1, 2, 3, 4]
+# # print(sorted(nums))
+# # print(sorted(nums,reverse=True))
+# # nums.reverse()
+# # print(nums)
+
+# # Lenght
+# # lenght = len(nums)
+# # print(lenght)
+
+# # Remove #girdigin siradaki elemani siler.
 # nums = [1, 2, 3, 4]
-# print(sorted(nums))
-# print(sorted(nums,reverse=True))
-# nums.reverse()
+# del nums [0]
 # print(nums)
 
-# Lenght
-# lenght = len(nums)
-# print(lenght)
+# # by val
+# nums.remove(2)
+# print(nums)
 
-# Remove #girdigin siradaki elemani siler.
-nums = [1, 2, 3, 4]
-del nums [0]
-print(nums)
+# nums = [ 2, 3, 2, 4]
+# nums.remove(2)
+# print(nums)
 
-# by val
-nums.remove(2)
-print(nums)
+# #pop - listenin sonundakini siler
+# # nums = [1,2,3,4,5]
+# # last = nums.pop() #last koymasanda calisir.
+# # print(nums)
+# # print(last)
 
-nums = [ 2, 3, 2, 4]
-nums.remove(2)
-print(nums)
+# # one = nums.pop(0)
+# # print(nums)
+# # print(one)
 
-#pop - listenin sonundakini siler
+# # Slicing
+# # var_name[sart_idx:stop_index:step_size]
+# # [0:end:1]
 # nums = [1,2,3,4,5]
-# last = nums.pop() #last koymasanda calisir.
+# print(nums[0: 3])
+# print(nums[::-2])
+# #print(nums [-1:0:-1])
+
+# copy_nums = nums[:] # Bu sekilde orjinali kopyalamis oluyoruz. 
+# #ama orjinal dosyanin aynisi degil yeni dosya oluyor.
+# #eger orjinal degisirse kopya degismez.
+# copy_nums_wrong = nums
+# nums[0] = 2
 # print(nums)
-# print(last)
+# print(copy_nums)
+# print(copy_nums_wrong)
 
-# one = nums.pop(0)
+# # range
+# # range (start, end, step)
+# for n in range(1, 2, 33):
+#     print(n)
+
+# nums = list(range(1, 2, 33))
 # print(nums)
-# print(one)
 
-# Slicing
-# var_name[sart_idx:stop_index:step_size]
-# [0:end:1]
-nums = [1,2,3,4,5]
-print(nums[0: 3])
-print(nums[::-2])
-#print(nums [-1:0:-1])
+# # min, max, sum
+# ages = [23, 25, 35, 18, 45]
 
-copy_nums = nums[:] # Bu sekilde orjinali kopyalamis oluyoruz. 
-#ama orjinal dosyanin aynisi degil yeni dosya oluyor.
-#eger orjinal degisirse kopya degismez.
-copy_nums_wrong = nums
-nums[0] = 2
-print(nums)
-print(copy_nums)
-print(copy_nums_wrong)
+# youngest = min(ages)
+# oldest = max(ages)
+# total_age = sum(ages)
 
-# range
-# range (start, end, step)
-for n in range(1, 2, 33):
-    print(n)
-
-nums = list(range(1, 2, 33))
-print(nums)
-
-# min, max, sum
-ages = [23, 25, 35, 18, 45]
-
-youngest = min(ages)
-oldest = max(ages)
-total_age = sum(ages)
-
-print(youngest, oldest, total_age)
+# print(youngest, oldest, total_age)

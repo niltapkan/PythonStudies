@@ -12,3 +12,17 @@ print(full_name.lower())
 
 #3 
 print(0.4 + 0.8)
+
+#28.11.2021
+
+#1
+classes = ['python', 'c', 'java']
+print(classes)
+
+#2
+print('A nice programming language is value.', classes[0])
+
+#3
+land = ['Jordan', 'Finland', 'indonesian']
+ 
+print('En sevdigim ulke', land[1])
