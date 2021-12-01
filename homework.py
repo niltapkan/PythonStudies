@@ -195,5 +195,35 @@ print(users[0][1], users[1][1])
 print(users[0][2], users[1][2])
 print(users[0][3], users[1][3]) # Bu sekilde birbirini eslestirebilirsin listeleri.
 
+# For Loops
+
+# Syntax
+
+# 'in' icinde var mi kontrol ediyoruz. 
+# 'for' kendinden sonra bir degisken gelir. 
+# sonrasinda 'in' gelerek degiskeni kontrol eder.
+
+for x in ls2:
+    print(x + " it's simple.")
+
+ls3 = [(1,2),(3,4),(5,6)]
+for x,y in ls3:
+    print(x,y)
+# Bu sekilde ls3 dekileri x ve y degerlerine atayabiliriz.
+
+playlist = { 
+    "sezen" : "kacin kurasi",
+    "tarkan" : "kuzu kuzu",
+    "mustafa" : "araba" 
+    }
+for artist in playlist.keys():
+    print(artist)
+
+for artist in playlist.values():
+    print(artist)
+
+for artist, sing in playlist.items():
+    print(artist, sing)
+
 # len() -> Bize verinin kac karakterli oldugunu gosterir. Uzunluk olcer.
 
