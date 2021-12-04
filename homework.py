@@ -211,19 +211,182 @@ for x,y in ls3:
     print(x,y)
 # Bu sekilde ls3 dekileri x ve y degerlerine atayabiliriz.
 
-playlist = { 
+playlist = {                     # dictinary oluyor bu.
     "sezen" : "kacin kurasi",
     "tarkan" : "kuzu kuzu",
     "mustafa" : "araba" 
     }
-for artist in playlist.keys():
+for artist in playlist.keys(): # keys bastaki elemani etkiler
     print(artist)
 
-for artist in playlist.values():
+for artist in playlist.values(): # values ikinci elemanlari etkiler
     print(artist)
 
-for artist, sing in playlist.items():
+for artist, sing in playlist.items(): # items hepsini karsilikli cikarir.
     print(artist, sing)
 
+# Enumerate - Siralama
+
+grocery = ['bread', 'milk', 'butter']
+
+for item in enumerate(grocery):
+  print(item) # Bu sekilde listedeki her bir elemanin sirasini gormus oluyoruz.
+
+# Peki bunu duzenli halde nasil yazariz?
+
+for count, item in enumerate(grocery):
+  print(count, item)
+
+# Eger kendim verdigim bir sayidan saymasini baslatmak istersem.
+
+for count, item in enumerate(grocery,10):
+    print(count, item)
+
+
+
+# Range
+'''
+range kelimesi İngilizcede ‘aralık’ anlamına gelir. 
+Biz Python’da range() fonksiyonunu belli bir aralıkta
+bulunan sayıları göstermek için kullanıyoruz.
+
+'''
+print('\n')
+
+for i in range(0,10):
+    print(i)
+
+'''
+range() fonksiyonu iki parametre alıyor. 
+Ama aslında bu fonksiyonun üçüncü bir parametresi daha vardır.
+
+range(ilk_sayı, son_sayı, atlama_değeri)
+
+'''
+print('\n')
+
+for i in range(0, 10, 2):
+    print(i)
+
+print('\n')
+
+print(range(len(grocery))) # Bu sekilde yazilirsa ciktisi
+# range(0,3) cikar. range yazisini gizlemek ve 0 1 2 seklinde
+# cikmasi icin '*' seklinde yazmaliyiz.
+
+print('\n')
+
+print(*range(len(grocery)))
 # len() -> Bize verinin kac karakterli oldugunu gosterir. Uzunluk olcer.
 
+# Common Op.
+
+# Modify - Veri yerine baska bi sey eklersin.
+
+print('\n')
+
+ls4 = ['elma', 'armut', 'portakal']
+ls4[1] = 'mandalina'
+print(ls4)
+
+# Find
+# index kullaniyoruz.
+print('\n')
+
+print(ls4.index('elma')) # verinin kacinci sirada oldugunu bildirir.
+#print(ls4.index('apple')) # ValueError: 'microsoft' is not in list.
+
+# If exists - dogru mu yanlis mi diye bakiyoruz.
+
+print('\n')
+
+print('microsoft' in ls4)
+print('portakal' in ls4)
+
+# Appending - listeye eklemek icin kullaniyoruz.
+
+print('\n')
+
+ls4.append('microsoft')
+print(ls4)
+
+# Inserting - yine eklemek icin kullaniriz ama belli bir yere.
+
+print('\n')
+
+ls4.insert(2, 'DeepMind')
+print(ls4)
+
+print('\n')
+
+names = []
+
+names.append('nilgun')
+names.append('abdullah')
+names.append('lina')
+
+for i, n in enumerate(names):
+    print(str(i + 1) + '-' + n.title()) # YAZILISI UNUTMA!!
+
+# Remove #girdigin siradaki elemani siler.
+
+print('\n')
+
+nums = [1, 2, 3, 4]
+del nums [0]
+print(nums)
+
+print('\n')
+
+nums.remove(2)
+print(nums)
+
+# Slicing
+
+print('\n')
+
+nums = [1,2,3,4,5]
+print(nums[0: 3])
+print(nums[::-2])
+print(nums [-1:0:-1])
+
+print('\n')
+
+# Copy
+
+copy_nums = nums[:] # Bu sekilde orjinali kopyalamis oluyoruz. 
+#ama orjinal dosyanin aynisi degil yeni dosya oluyor.
+#eger orjinal degisirse kopya degismez.
+copy_nums_wrong = nums
+nums[0] = 2
+print(nums)
+print(copy_nums)
+print(copy_nums_wrong)
+
+# Range
+
+# range (start, end, step)
+
+print('\n')
+
+for a in range(1, 33, 12 ):
+    print(a)
+
+# Nums - listeleyerek yazar
+
+print('\n')
+
+nums = list(range(1, 33, 12 ))
+print(nums)
+
+# min, max, sum
+
+print('\n')
+
+ages = [23, 25, 35, 18, 45]
+
+youngest = min(ages)
+oldest = max(ages)
+total_age = sum(ages)
+
+print(youngest, oldest, total_age)
