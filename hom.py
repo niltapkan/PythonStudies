@@ -102,16 +102,19 @@ print('\n')
 
 # 13
 
-n = int(input(8))
-sum = 1
-for i in range (1, n+1):
-    sum= sum*i
-print('!' + str(n), '=', sum)
+# n = int(input(8))
+# sum = 1
+# for i in range (1, n+1):
+#     sum= sum*i
+# print('!' + str(n), '=', sum)
 
-print('\n')
+# print('\n')
 
 # 14 
 
-n1 = int(input(2))
-n.rev = str(n1).
+for i in range(1,100):
+    for j in range (1,i):
+        print(j, end='')
+
+    print('\n')
 
