@@ -162,36 +162,36 @@
 #     print(f'Message: {message}') # bu sekilde yine cok tekrr ve uzun bir islem var,
     # bunu kisaltalim.
 
-# def email_students(message, emails):
-#     for email in emails:
-#         print(f'Sent to: {email}')
-#         print(f'Message: {message}')
+def email_students(message, emails):
+    for email in emails:
+        print(f'Sent to: {email}')
+        print(f'Message: {message}')
     
-# emails = ['ea@gmail.com', 'as@gmail.com', 'lk@gmail.com', 'ok@gmail.com']
+emails = ['ea@gmail.com', 'as@gmail.com', 'lk@gmail.com', 'ok@gmail.com']
 
-# message = 'Students must bring a pen!'
-# email_students(message, emails)
+message = 'Students must bring a pen!'
+email_students(message, emails)
 
-# message = 'Also an eraser please...'
-# email_students(message, emails)
+message = 'Also an eraser please...'
+email_students(message, emails)
 
-# message = 'No pen, meant pencil!'
-# email_students(message, emails[:2])
+message = 'No pen, meant pencil!'
+email_students(message, emails[:2])
 
-def get_number_of_words(sentence):
-    ls = sentence.split(' ')
-    return len(ls) # 'return' le degeri geri al diyoruz.
-    #(bulunan degerin geri gonderilmesi) Returnden sonra fonksiyon biter. kod calismaz
+# def get_number_of_words(sentence):
+#     ls = sentence.split(' ')
+#     return len(ls) # 'return' le degeri geri al diyoruz.
+#     #(bulunan degerin geri gonderilmesi) Returnden sonra fonksiyon biter. kod calismaz
 
-message = 'The world is an amazing place!'
-lenght = get_number_of_words(message)
-print(lenght)
+# message = 'The world is an amazing place!'
+# lenght = get_number_of_words(message)
+# print(lenght)
 
-def double(a):
-    a*2
-def kare(b):
-    return b*b
-def toplam(c):
-    return c+3
+# def double(a):
+#     a*2
+# def kare(b):
+#     return b*b
+# def toplam(c):
+#     return c+3
 
-print(toplam(kare(double(2))))
+# print(toplam(kare(double(2))))
