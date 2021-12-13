@@ -394,5 +394,61 @@
 
 # Q2
 
-a = "The quick brown fox jumps over the lazy dog."
-print(a.split())
+# a = "The quick brown fox jumps over the lazy dog."
+# print(a.split())
+
+# Exercise:
+# def crowd_test(names):
+# if len(names) > 3:
+#     print('Bu sinif cok kalabalik.')
+# names = ['abd', 'merve', 'ali', 'burak']
+# crowd_test()
+# names.pop()
+# names.pop()
+# crowd_test(names)
+# names = ['abd', 'merve', 'ali', 'burak','jih','lgkdc']
+# if len(names) == 4:
+#     print('sinif dolu da dolu.')
+# elif len(names) < 3:
+#     print('insan yok burda')
+# elif len(names) > 5:
+#     print('burada cete var')
+# else:
+#     pass  
+
+# # Every value has a truth value 
+# # Int
+# # 0 - false
+# # anything else is true
+# def truth_value(value):
+#     if value:
+#         print(f'{value}, {type(value)} evaluates to True')  
+#     else:
+#         print(f'{value}, {type(value)} evaluates to False')
+
+# r = red / b = blue / g = green
+# aliens = ['r', 'b', 'g', 'g', 'g', 'g', 'b', 'r', 'r', 'b' ]
+# points = 0
+# for i in aliens:
+#     if i == 'r':
+#         points += 5
+#     elif i == 'b':
+#         points = points + 20
+#     else:
+#         points += 10
+# print(points)
+school = ['t', 't', 'p1', 'p2', 'p4', 'p6', 's1', 's2', 's5', 's4', 's3']
+    # Output:
+    # - 100
+ # Making list for students
+ # Making list for parents. Parent 1 is the parent of student 1 and so on.
+points = 0 # setting points to 0.
+
+for i in school: # Looping until we have gone through all items in the longest list (students)
+    if i in 't' :
+        points += 5 # Only checking for parents because students dont give points unless they have a parent
+    elif 'p' in i:   
+        points += 25 # adding points for student parent pair
+    if 's' not in i:
+            points += 
+print(points)
