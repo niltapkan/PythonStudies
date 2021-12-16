@@ -182,37 +182,37 @@
 # num = [4,5,6,7,8,9]
 # numbers(num)
 
-# Q5
-# Topic: If-Else / Functions / ?
-# Points: 10
-# -----------------------------------------------------------------------------
-# o Write a function that takes hours as argument (as a float) and converts it to hours, minutes and seconds and prints it.
-# Sample Input:
-# hours = 1.53
-# Sample Output:
-# 1 hour 31 minutes and 48 seconds
+# # Q5
+# # Topic: If-Else / Functions / ?
+# # Points: 10
+# # -----------------------------------------------------------------------------
+# # o Write a function that takes hours as argument (as a float) and converts it to hours, minutes and seconds and prints it.
+# # Sample Input:
+# # hours = 1.53
+# # Sample Output:
+# # 1 hour 31 minutes and 48 seconds
 
 
-saniye1=int(input("Saat kac: "))
-def dakikasaniye(san):
-    if san<60:
-        print("0 dakika",san,"saniye")
-    elif san>=60:
+# saniye1=int(input("Saat kac: "))
+# def dakikasaniye(san):
+#     if san<60:
+#         print("0 dakika",san,"saniye")
+#     elif san>=60:
        
-        dak=int(san//60)
-        cevir=dak*60
-        kalansaniye=san-cevir
-        print(dak,"dakika",kalansaniye,"saniye")
-def saatim(saniye):
-    if saniye<3600:
-        dakikasaniye(saniye)
-    elif saniye>=3600:
-        saat=int(saniye//3600)
-        saat2=int(saat*3600)
-        kalan_saniye=int(saniye-saat2)
-        print(saat,"saat",end=" ")
-        dakikasaniye(kalan_saniye)  
-saatim(dakikasaniye)
+#         dak=int(san//60)
+#         cevir=dak*60
+#         kalansaniye=san-cevir
+#         print(dak,"dakika",kalansaniye,"saniye")
+# def saatim(saniye):
+#     if saniye<3600:
+#         dakikasaniye(saniye)
+#     elif saniye>=3600:
+#         saat=int(saniye//3600)
+#         saat2=int(saat*3600)
+#         kalan_saniye=int(saniye-saat2)
+#         print(saat,"saat",end=" ")
+#         dakikasaniye(kalan_saniye)  
+# saatim(dakikasaniye)
 
 # Q6
 # Topic: If-Else / Functions / Lists
@@ -225,3 +225,28 @@ saatim(dakikasaniye)
 # Sample Output:
 # ['one', 'two', 'three', 'four', 'five']
 
+# Q7
+# Topic: If-Else / Functions / ? / ?
+# Points: 5
+# -----------------------------------------------------------------------------
+# o Write a function that takes in a string. The function should return True if the string is a palindrome and False if it is not.
+# o A palindrome is a string that is the same forwards and backwards.
+# o The function should return None if the string is empty.
+# Sample Input:
+# string = "racecar"
+# Sample Output:
+# True
+
+def palindrome(x):
+    return x == x[::-1]
+
+x = 'nilgun'
+ans = palindrome(x)
+
+x = 'halah'
+ans = palindrome(x)
+
+if ans:
+    print('True')
+else:
+    print('False')
