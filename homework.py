@@ -444,11 +444,11 @@ school = ['t', 't', 'p1', 'p2', 'p4', 'p6', 's1', 's2', 's5', 's4', 's3']
  # Making list for parents. Parent 1 is the parent of student 1 and so on.
 points = 0 # setting points to 0.
 
-for i in school: # Looping until we have gone through all items in the longest list (students)
-    if i in 't' :
-        points += 5 # Only checking for parents because students dont give points unless they have a parent
-    elif 'p' in i:   
-        points += 25 # adding points for student parent pair
-    if 's' not in i:
-            points += 
-print(points)
+# for i in school: # Looping until we have gone through all items in the longest list (students)
+#     if i in 't' :
+#         points += 5 # Only checking for parents because students dont give points unless they have a parent
+#     elif 'p' in i:   
+#         points += 25 # adding points for student parent pair
+#     if 's' not in i:
+#             points += 
+# print(points)
