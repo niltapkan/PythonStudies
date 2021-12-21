@@ -150,8 +150,8 @@ products = [p1, p2, {'name':'oneplus5', 'price':2000}] # product uzerinde
 
 
 for p in products:
-    print(p)
-
+    # print(p)
+    print(p.get('name'))
 # meyveler = {
 #     'elma': 'en bi sevdigimdir.',
 #     'karpuz': 'yazlari ne hos dedigimdir.',
