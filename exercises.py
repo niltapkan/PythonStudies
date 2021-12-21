@@ -101,44 +101,49 @@
 
 # crowd_test(f)
 
-# Q1
-# Topic: If-Else / For-Loop
-# Points: 5
-# -----------------------------------------------------------------------------
-# o Write a program that asks the user to enter a number.
-# o If the number is greater than 10, print "The number is greater than 10".
-# o If the number is less than or equal to 10, print "The number is less than or equal to 10".
+# # Q1+
+# # Topic: If-Else / For-Loop
+# # Points: 5
+# # -----------------------------------------------------------------------------
+# # o Write a program that asks the user to enter a number.
+# # o If the number is greater than 10, print "The number is greater than 10".
+# # o If the number is less than or equal to 10, print "The number is less than or equal to 10".
 
 
+# a = int(input('Enter a number: '))
+# if (a > 10):
+#     print("The number is greater than 10")
+# else:
+#     print("The number is less than or equal to 10")
 
-# def enter_number(a):
-#     input = 'Enter a number: ' + str(a)
 
-#     for i in a:
-#         if (i > 10):
-#             print(f"The number is greater than 10 {i}")
-#         else:
-#             print(f"The number is less than or equal to 10 {i}")
-# enter_number(10)
-# Q2
-# Topic: If-Else / For-Loop / Lists / Functions
-# Points: 20
-# -----------------------------------------------------------------------------
-# o Jim is in a forest. It's been quite some time he hasn't eaten anything. He knows that he will get hungry soon. He knows that this side of the forest is full of delicious mushrooms. But he also is not good distinguishing poisonous mushrooms from delicious mushrooms.
-# o Every mushroom in the forest has a code on it, a string of letters. Luckily, he has a list of codes, if a mushroom includes any of these codes in it's code, then it is poisonous. He needs to however check the mushrooms quickly since he doesn't have much time left. We are going to write a program that will check which mushrooms are poisonous and which are not. And count how many mushrooms Jim can eat.
-# o The function is_poisonous takes a mushroom code as an argument and returns True if the mushroom is poisonous and False if it is not.
-# o The function count_poisonous takes a list of mushroom codes and returns the number of poisonous mushrooms in the list.
-# Sample Input:
+# # Q2?
+# # Topic: If-Else / For-Loop / Lists / Functions
+# # Points: 20
+# # -----------------------------------------------------------------------------
+# # o Jim is in a forest. It's been quite some time he hasn't eaten anything. He knows that he will get hungry soon. He knows that this side of the forest is full of delicious mushrooms. But he also is not good distinguishing poisonous mushrooms from delicious mushrooms.
+# # o Every mushroom in the forest has a code on it, a string of letters. Luckily, he has a list of codes, if a mushroom includes any of these codes in it's code, then it is poisonous. He needs to however check the mushrooms quickly since he doesn't have much time left. We are going to write a program that will check which mushrooms are poisonous and which are not. And count how many mushrooms Jim can eat.
+# # o The function is_poisonous takes a mushroom code as an argument and returns True if the mushroom is poisonous and False if it is not.
+# # o The function count_poisonous takes a list of mushroom codes and returns the number of poisonous mushrooms in the list.
+# # Sample Input:
 # poisonous_codes = ['cod', 'arpe', 'xxyt', 'acr', 'bcd', 'xz']
-# forest_mushrooms = ['htrcd', 'tarpes, 'xxytr', 'ceaar', 'vvbctd', vsxz', 'accr', 'ccod', 'ttyt', 'garxxytacr', 'ccd', 'xz']
-# Sample Output:
-# The forest contains: 12 mushrooms
-# Number of poisonous mushrooms: 6
-# Number of edible mushrooms: 6
+# forest_mushrooms = ['htrcd', 'tarpes', 'xxytr', 'ceaar', 'vvbctd', 'vsxz', 'acr', 'ccod', 'ttyt', 'garxxytacr', 'ccd', 'xz']
+# # Sample Output:
+# # The forest contains: 12 mushrooms
+# # Number of poisonous mushrooms: 6
+# # Number of edible mushrooms: 6
 
+# def is_poisonous():
+#     for i in forest_mushrooms:
+#         for j in poisonous_codes:
+#             if i in j:
+#                 return True
+#             else:
+#                 return False
 
+# print(is_poisonous())
 
-# # Q3
+# # Q3+
 # # Topic: If-Else / Functions
 # # Points: 5
 # # -----------------------------------------------------------------------------
@@ -151,20 +156,19 @@
 # # You should not go outside. It is freezing... Damn!
 
 # def temprature(a):
-#     print('Temprature: ' + str(a))
+#     a = int(input('Temprature: '))
 
 #     if(a <= -10):
 #         print('You should not go outside. It is freezing... Damn!')
 #     elif(a <= 0):
-#         print('The weather is okey.')
+#         print('The weather is okay.')
 #     else:
 #         print('The weather is fine.')
         
-# temprature(-3)
-# temprature(0)
-# temprature(10)
+# temprature(a = int(input('Temprature: ')))
 
-# # Q4
+
+# # Q4+
 # # Topic: If-Else / Functions / Lists
 # # Points: 5
 # # -----------------------------------------------------------------------------
@@ -182,71 +186,57 @@
 # num = [4,5,6,7,8,9]
 # numbers(num)
 
-# # Q5
+# # Q5 ...
 # # Topic: If-Else / Functions / ?
 # # Points: 10
 # # -----------------------------------------------------------------------------
-# # o Write a function that takes hours as argument (as a float) and converts it to hours, minutes and seconds and prints it.
+# # o Write a function that takes hours as argument (as a float) and converts it to hours, 
+# # minutes and seconds and prints it.
 # # Sample Input:
 # # hours = 1.53
 # # Sample Output:
 # # 1 hour 31 minutes and 48 seconds
 
+# def hours(a):
 
-# saniye1=int(input("Saat kac: "))
-# def dakikasaniye(san):
-#     if san<60:
-#         print("0 dakika",san,"saniye")
-#     elif san>=60:
-       
-#         dak=int(san//60)
-#         cevir=dak*60
-#         kalansaniye=san-cevir
-#         print(dak,"dakika",kalansaniye,"saniye")
-# def saatim(saniye):
-#     if saniye<3600:
-#         dakikasaniye(saniye)
-#     elif saniye>=3600:
-#         saat=int(saniye//3600)
-#         saat2=int(saat*3600)
-#         kalan_saniye=int(saniye-saat2)
-#         print(saat,"saat",end=" ")
-#         dakikasaniye(kalan_saniye)  
-# saatim(dakikasaniye)
 
-# Q6
-# Topic: If-Else / Functions / Lists
-# Points: 5
-# -----------------------------------------------------------------------------
-# o Write a function that converts a list of digits into a list of thier names.
-# o The function should return None if the list is empty.
-# Sample Input:
-# numbers = [1, 2, 3, 4, 5]
-# Sample Output:
-# ['one', 'two', 'three', 'four', 'five']
 
-# Q7
-# Topic: If-Else / Functions / ? / ?
-# Points: 5
-# -----------------------------------------------------------------------------
-# o Write a function that takes in a string. The function should return True if the string is a palindrome and False if it is not.
-# o A palindrome is a string that is the same forwards and backwards.
-# o The function should return None if the string is empty.
-# Sample Input:
-# string = "racecar"
-# Sample Output:
-# True
+# # Q6+
+# # Topic: If-Else / Functions / Lists
+# # Points: 5
+# # -----------------------------------------------------------------------------
+# # o Write a function that converts a list of digits into a list of thier names.
+# # o The function should return None if the list is empty.
+# # Sample Input:
+# # numbers = [1, 2, 3, 4, 5]
+# # Sample Output:
+# # ['one', 'two', 'three', 'four', 'five']
 
-def palindrome(x):
-    return x == x[::-1]
+# ls = [0,2,3,6,4,8,1,7,5,9]
+# ls1 = ['zero','one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+# ls.sort()
+# for i in ls:
+#     ls[i] = ls1[i]
+# print(ls)
 
-x = 'nilgun'
-ans = palindrome(x)
+# # Q7+
+# # Topic: If-Else / Functions / ? / ?
+# # Points: 5
+# # -----------------------------------------------------------------------------
+# # o Write a function that takes in a string. The function should return True if the string is a palindrome and False if it is not.
+# # o A palindrome is a string that is the same forwards and backwards.
+# # o The function should return None if the string is empty.
+# # Sample Input:
+# # string = "racecar"
+# # Sample Output:zfz
+# # True
 
-x = 'halah'
-ans = palindrome(x)
+# def palindrome(x):
+#     if x == '':
+#         return None
+#     elif x == [-1]:
+#         return True
+#     else:
+#         return False
 
-if ans:
-    print('True')
-else:
-    print('False')
+# print(palindrome(x = input()))
