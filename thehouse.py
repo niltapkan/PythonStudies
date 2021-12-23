@@ -1,6 +1,6 @@
 
 def start_menu():
-    return """
+    print("""
     --------------------------------------------------
      _____ _   _ _____   _   _  ___  _   _ ____  _____ 
     |_   _| | | | ____| | | | |/ _ \| | | / ___|| ____|
@@ -12,16 +12,17 @@ def start_menu():
     1. Start game
     2. Quit game
     --------------------------------------------------
-"""
-print(start_menu())
+""")
+#start_menu()
 
 options = ["Start game", "Quit game"]  
-def choose():
-    op = input('Your choose: ')
+'''def choice():
+    op = input('Your choice: ')
     if op == "Start game":
         print('Welcome to The House!')
     elif op == '1':
-        print('Welcome to The House!') 
+        print('Welcome to The House!')
+        house_init()
     elif op == 'Start':
         print('Welcome to The House!')    
     elif op == "Quit game":
@@ -29,18 +30,16 @@ def choose():
     elif op == '2':
         print('Good bye!')
     else:
-        print(input('Please choose again: '))
-
+        op = input('Please choose again: ')
+        
     # def exit():
     #     return 'Come again!'
     # op == '2' or 'Quit game'    
     # while op == False:
     #     print(exit())
 
-print(choose())
-
-def house_init():
-     house = {
+choice()'''
+house = {
         "Living Room": {
             "Description": "You are in the living room. You see a fireplace, a window, and a blood stain on the floor.",
             "Fireplace": {
@@ -61,5 +60,7 @@ def house_init():
         "Garage": {},
         "Toilet": {}
     }
+for key, value in house.get():
+    print(f'{key}: {value}')
 
 

@@ -111,12 +111,63 @@
 # # print('\n')
 
 # # 14 
+# num = 1234
+# print(str(num)[::-1])
 
-# # for i in range(1,100):
-# #     for j in range (1,i):
-# #         print(j, end='')
+# # 15
+# ls = ['B', 'N', 'M']
+# print('KArdesler: ')
+# for i in range(3):
+    # print(ls[i])
 
-# #     print('\n')
+# 16
+
+# for i in range(10):
+#     print(i ** 3)
+
+# 17 ?
+
+# 18
+rows = 5
+def pyramid(rows):
+    for i in range(rows):
+        print(''*(rows - i - 1)+'* '*(i+1))
+    for j in range(rows-1,0,-1):
+        print(''*(rows-j)+'* '*(j))
+
+pyramid(rows)
+
+# 19
+n = 5
+for i in range(n-1):
+    for j in range(i, n):
+        print('  ', end='')
+    for j in range(i):
+        print('* ',end='')
+    for j in range(i + 1):
+        print('* ', end='')
+    print()
+
+for i in range(n):
+    for j in range(i + 1):
+        print('  ', end='')
+    for j in range(i, n-1):
+        print('* ', end='')
+    for j in range(i,n):
+        print('* ',end='')
+    print()
+
+# 20
+def personal_questions():
+    print('Cat care course')
+    input('Name: ')
+    input('Surname: ')
+    i = int(input('Age: '))
+    if (i >= 12):
+        print('Welcome to Cat care course!')
+    else:
+        print('Not suitable for this age range.')   
+personal_questions()
 
 # Q1
 
@@ -136,11 +187,12 @@
 
 # Q3
 
-a = "A day without sunshine is like, you know, not a day."
-b = "Dreams come true. Without a dream, nothing happens."
-c = "Dry day in a drought."
-e = "Dance or die. The choice is dreadfully simple."
+# a = "A day without sunshine is like, you know, not a day."
+# b = "Dreams come true. Without a dream, nothing happens."
+# c = "Dry day in a drought."
+# e = "Dance or die. The choice is dreadfully simple."
 
-x = a.find('d')
-print(x)
+# x = a.find('d')
+# print(x)
 
+# Hw/2
