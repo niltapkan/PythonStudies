@@ -16,7 +16,7 @@ def start_menu():
 #start_menu()
 
 options = ["Start game", "Quit game"]  
-'''def choice():
+def choice():
     op = input('Your choice: ')
     if op == "Start game":
         print('Welcome to The House!')
@@ -38,7 +38,7 @@ options = ["Start game", "Quit game"]
     # while op == False:
     #     print(exit())
 
-choice()'''
+choice()
 house = {
         "Living Room": {
             "Description": "You are in the living room. You see a fireplace, a window, and a blood stain on the floor.",
