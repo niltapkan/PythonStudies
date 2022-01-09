@@ -410,5 +410,196 @@ check_vowels(string)
 #   and numbers. Python won't complain or throw errors if you use capitalization, 
 #   but you will mislead other programmers if you use capital letters in variables 
 #   at this point.
+# Q1+
+# # Topic: If-Else / For-Loop
+# # Points: 5
+# # -----------------------------------------------------------------------------
+# # o Write a program that asks the user to enter a number.
+# # o If the number is greater than 10, print "The number is greater than 10".
+# # o If the number is less than or equal to 10, print "The number is less than or equal to 10".
 
 
+# a = int(input('Enter a number: '))
+# if (a > 10):
+#     print("The number is greater than 10")
+# else:
+#     print("The number is less than or equal to 10")
+
+
+# # Q2?
+# # Topic: If-Else / For-Loop / Lists / Functions
+# # Points: 20
+# # -----------------------------------------------------------------------------
+# # o Jim is in a forest. It's been quite some time he hasn't eaten anything. He knows that he will get hungry soon. He knows that this side of the forest is full of delicious mushrooms. But he also is not good distinguishing poisonous mushrooms from delicious mushrooms.
+# # o Every mushroom in the forest has a code on it, a string of letters. Luckily, he has a list of codes, if a mushroom includes any of these codes in it's code, then it is poisonous. He needs to however check the mushrooms quickly since he doesn't have much time left. We are going to write a program that will check which mushrooms are poisonous and which are not. And count how many mushrooms Jim can eat.
+# # o The function is_poisonous takes a mushroom code as an argument and returns True if the mushroom is poisonous and False if it is not.
+# # o The function count_poisonous takes a list of mushroom codes and returns the number of poisonous mushrooms in the list.
+# # Sample Input:
+# poisonous_codes = ['cod', 'arpe', 'xxyt', 'acr', 'bcd', 'xz']
+# forest_mushrooms = ['htrcd', 'tarpes', 'xxytr', 'ceaar', 'vvbctd', 'vsxz', 'acr', 'ccod', 'ttyt', 'garxxytacr', 'ccd', 'xz']
+# # Sample Output:
+# # The forest contains: 12 mushrooms
+# # Number of poisonous mushrooms: 6
+# # Number of edible mushrooms: 6
+
+def is_poisonous(mushroom, poisonous_codes):
+    # mushroom = arpe
+    # poisonous_codes = ['cod', 'arpe', 'xxyt', 'acr', 'bcd', 'xz']
+    for code in poisonous_codes:
+        if code in mushroom:
+            return True # poisonous
+    return False # non-poisonous
+
+
+def count_poisionous(mushroom_list, poisonous_codes):
+    counter_p = 0
+    for mushroom in mushroom_list:
+        if is_poisonous(mushroom, poisonous_codes):
+            counter_p = counter_p + 1
+    return counter_p
+
+
+poisonous_codes = ['cod', 'arpe', 'xxyt', 'acr', 'bcd', 'xz']
+forest_mushrooms = ['htrcd', 'tarpes', 'xxytr', 'ceaar', 'vvbctd', 'vsxz', 'accr', 'ccod', 'ttyt', 'garxxytacr', 'ccd', 'xz']
+num_p = count_poisionous(forest_mushrooms, poisonous_codes)
+num_m = len(forest_mushrooms)
+
+print(f'Total number of mushrooms:\t{num_m}')
+print(f'Number of poisonous:\t\t{num_p}')
+print(f'Number of edible:\t\t{num_m - num_p}')
+
+# # Q3+
+# # Topic: If-Else / Functions
+# # Points: 5
+# # -----------------------------------------------------------------------------
+# # o Write a function that takes the temprature as an argument and prints if user should go outside or not, 
+# # and how the weather is. Use at least 3 different if-else statements.
+# # o Make up your own loagic about the weather.
+# # Sample Input:
+# # temprature = -35
+# # Sample Output:
+# # You should not go outside. It is freezing... Damn!
+
+# def temprature(a):
+#     a = int(input('Temprature: '))
+
+#     if(a <= -10):
+#         print('You should not go outside. It is freezing... Damn!')
+#     elif(a <= 0):
+#         print('The weather is okay.')
+#     else:
+#         print('The weather is fine.')
+        
+# temprature(a = int(input('Temprature: ')))
+
+
+# # Q4+
+# # Topic: If-Else / Functions / Lists
+# # Points: 5
+# # -----------------------------------------------------------------------------
+# # o Write a function that takes a list of numbers as an argument and returns the largest number in the list.
+# # o The function should return None if the list is empty.
+# # Sample Input:
+# # numbers = [1, 2, 3, 4, 5]
+# # Sample Output:
+# # 5
+
+# def numbers(a):
+#     a.sort()
+#     print('Largest element is: ', a[-1])
+
+# num = [4,5,6,7,8,9]
+# numbers(num)
+
+# # Q5 ...
+# # Topic: If-Else / Functions / ?
+# # Points: 10
+# # -----------------------------------------------------------------------------
+# # o Write a function that takes hours as argument (as a float) and converts it to hours, 
+# # minutes and seconds and prints it.
+# # Sample Input:
+# # hours = 1.53
+# # Sample Output:
+# # 1 hour 31 minutes and 48 seconds
+
+# def hours(a):
+
+
+
+# # Q6+
+# # Topic: If-Else / Functions / Lists
+# # Points: 5
+# # -----------------------------------------------------------------------------
+# # o Write a function that converts a list of digits into a list of thier names.
+# # o The function should return None if the list is empty.
+# # Sample Input:
+# # numbers = [1, 2, 3, 4, 5]
+# # Sample Output:
+# # ['one', 'two', 'three', 'four', 'five']
+
+# ls = [0,2,3,6,4,8,1,7,5,9]
+# ls1 = ['zero','one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+# ls.sort()
+# for i in ls:
+#     ls[i] = ls1[i]
+# print(ls)
+
+# # Q7+
+# # Topic: If-Else / Functions / ? / ?
+# # Points: 5
+# # -----------------------------------------------------------------------------
+# # o Write a function that takes in a string. The function should return True if the string is a palindrome and False if it is not.
+# # o A palindrome is a string that is the same forwards and backwards.
+# # o The function should return None if the string is empty.
+# # Sample Input:
+# # string = "racecar"
+# # Sample Output:zfz
+# # True
+
+# def palindrome(x):
+#     if x == '':
+#         return None
+#     elif x == [-1]:
+#         return True
+#     else:
+#         return False
+
+# print(palindrome(x = input()))
+
+# Q8
+# Topic: If-Else / For-Loop / Lists / Functions
+# Points: 40
+# -----------------------------------------------------------------------------
+# o We want to create a partial to-do list. We want to be able to add new items to the list, remove items from the list, and mark items as completed. We then want to be able to print the list.
+# o Create a function called add_item that takes in a list and a string. The function should add the string to the list.
+def add_item(ls):
+    item = input("Enter what you wanna add: ")
+    ls.append(item) 
+todo_list = ['wash car', 'buy groceries', 'pay bills']
+add_item(todo_list)
+# o Create a function called remove_item that takes in a list and a string. The function should remove the string from the list.
+def remove_item(ls):
+    item = input("Enter what you wanna remove: ")
+    ls.remove(item)   
+# o Create a function called mark_completed that takes in a list and a string. The function should mark the string as completed.
+def mark_completed(ls):
+    item = input()
+    ls.
+# o Create a function called print_list that takes in a list. The function should print the list.
+# Sample Input:
+# todo_list = ['wash car', 'buy groceries', 'pay bills']
+# Sample Output:
+# - wash car
+# - buy groceries
+# - pay bills
+###
+# Add an item to the list: 'go to the gym'
+# Remove an item from the list: 'pay bills'
+# Mark an item as completed: 'wash car'
+# Run the program again to see the updated list.
+# Sample Output:
+# x wash car
+# - buy groceries
+# - go to the gym
+# -----------------------------------------------------------------------------
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

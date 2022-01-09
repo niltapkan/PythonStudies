@@ -96,19 +96,39 @@ def house_init():
                 "pickable": False,
                 "action": "Light the fire"
             },
-            "Tool2": {
-                "description": "Tool2 description",
+            "Key": {
+                "description": "A key which stays on the bloody floor",
                 "pickable": True,
-                "action": "Tool2 action"
+                "action": "Open the bedroom door"
             },
-            "Tool3": {},
-            "Exits": ["Hallway", "Garage", "Bedroom"],
+            "Door": {
+                "description":"A door which opens the bedroom"
+            },
+            "Exits": ["Hallway"],
+            },
+        "Bedroom": {
+            "Description":"The bed is completely tidied up. But there is little bit blood on the table. There is an axe also under the bed.",
+            "Axe":{
+                "description": "There is an axe also under the bed.",
+                "picable": True,
+                "action":"Break the kitchen door with axe"
+            },
+            "Exits": ["Living room"],
+            },
+                 
+        "Kitchen": {
+            "Description":""
+            "":{
+                "d":
+                "p":
+                "action":
+            }
+            "Exits":[]
         },
-        "Living Room": {},
-        "Kitchen": {},
         "Hallway": {},
         "Garage": {},
         "Toilet": {}
+        
     }
 
     return house
